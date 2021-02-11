@@ -1,0 +1,297 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\Vxl-Vdk\Bt1_ASM.uvproj
+Project File Date:  04/17/2020
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling Bt1.c...
+linking...
+Program Size: data=9.0 xdata=0 code=46
+creating hex file from "Bt1_ASM"...
+"Bt1_ASM" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=9.0 xdata=0 code=46
+creating hex file from "Bt1_ASM"...
+"Bt1_ASM" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling Bt1.asm...
+linking...
+*** WARNING L7: MODULE NAME NOT UNIQUE
+    MODULE:  Bt1.obj (BT1)
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      0002H
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 0023H
+Program Size: data=9.0 xdata=0 code=40
+creating hex file from "Bt1_ASM"...
+"Bt1_ASM" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      0002H
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 0023H
+Program Size: data=9.0 xdata=0 code=40
+creating hex file from "Bt1_ASM"...
+"Bt1_ASM" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+assembling Bt1.asm...
+linking...
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      0002H
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 0051H
+Program Size: data=9.0 xdata=0 code=86
+creating hex file from "Bt1_ASM"...
+"Bt1_ASM" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+assembling Bt1.asm...
+linking...
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      0002H
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 0051H
+Program Size: data=9.0 xdata=0 code=86
+creating hex file from "Bt1_ASM"...
+"Bt1_ASM" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+assembling Bt1.asm...
+linking...
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      0002H
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 0051H
+Program Size: data=9.0 xdata=0 code=86
+creating hex file from "Bt1_ASM"...
+"Bt1_ASM" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+assembling Bt1.asm...
+linking...
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      0002H
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 004BH
+Program Size: data=9.0 xdata=0 code=80
+creating hex file from "Bt1_ASM"...
+"Bt1_ASM" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+assembling Bt1.asm...
+linking...
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      0002H
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 004EH
+Program Size: data=9.0 xdata=0 code=83
+creating hex file from "Bt1_ASM"...
+"Bt1_ASM" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+assembling Bt1.asm...
+linking...
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      0002H
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 004EH
+Program Size: data=9.0 xdata=0 code=83
+creating hex file from "Bt1_ASM"...
+"Bt1_ASM" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+assembling Bt1.asm...
+linking...
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      0002H
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 004EH
+Program Size: data=9.0 xdata=0 code=83
+creating hex file from "Bt1_ASM"...
+"Bt1_ASM" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+assembling Bt1.asm...
+linking...
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      0002H
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 004EH
+Program Size: data=9.0 xdata=0 code=83
+creating hex file from "Bt1_ASM"...
+"Bt1_ASM" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+assembling Bt1.asm...
+linking...
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      0002H
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 0055H
+Program Size: data=9.0 xdata=0 code=90
+creating hex file from "Bt1_ASM"...
+"Bt1_ASM" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+assembling Bt1.asm...
+linking...
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      0002H
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 0055H
+Program Size: data=9.0 xdata=0 code=90
+creating hex file from "Bt1_ASM"...
+"Bt1_ASM" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+assembling Bt1.asm...
+linking...
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      0002H
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 0058H
+Program Size: data=9.0 xdata=0 code=93
+creating hex file from "Bt1_ASM"...
+"Bt1_ASM" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+assembling Bt1.asm...
+linking...
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      0002H
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 0055H
+Program Size: data=9.0 xdata=0 code=90
+creating hex file from "Bt1_ASM"...
+"Bt1_ASM" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      0002H
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 0055H
+Program Size: data=9.0 xdata=0 code=90
+creating hex file from "Bt1_ASM"...
+"Bt1_ASM" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+assembling Bt1.asm...
+Bt1.asm(15): error A22: EXPRESSION TYPE DOES NOT MATCH INSTRUCTION
+Target not created
+Build target 'Target 1'
+assembling Bt1.asm...
+linking...
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      0002H
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 005CH
+Program Size: data=9.0 xdata=0 code=97
+creating hex file from "Bt1_ASM"...
+"Bt1_ASM" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+assembling Bt1.asm...
+linking...
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      0002H
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 005EH
+Program Size: data=9.0 xdata=0 code=99
+creating hex file from "Bt1_ASM"...
+"Bt1_ASM" - 0 Error(s), 3 Warning(s).

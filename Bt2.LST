@@ -1,0 +1,63 @@
+A51 MACRO ASSEMBLER  BT2                                                                  04/17/2020 16:31:05 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02
+OBJECT MODULE PLACED IN Bt2.OBJ
+ASSEMBLER INVOKED BY: E:\Keil\C51\BIN\A51.EXE Bt2.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1                     ORG     00H
+0000 020030            2     LJMP    MAIN
+000B                   3                     ORG             0BH
+000B 020045            4     LJMP    TF0_ISR
+001B                   5                     ORG             1BH
+001B 02004C            6     LJMP    TF1_ISR
+0030                   7                     ORG             30H
+0030 758912            8     MAIN:   MOV             TMOD, #12H
+0033 758B18            9                     MOV             TL1, #18H
+0036 758DFC           10                     MOV             TH1, #0FCH
+0039 758CB7           11                     MOV             TH0, #0B7H
+003C 75A88A           12                     MOV             IE, #8AH
+003F D28E             13                     SETB    TR1
+0041 D28C             14                     SETB    TR0
+0043 80FE             15                     JMP             $
+0045                  16     TF0_ISR:
+0045 C28C             17                     CLR             TR0
+0047 B297             18                     CPL             P1.7
+0049 D28C             19                     SETB    TR0
+004B 32               20                     RETI
+004C                  21     TF1_ISR:
+004C C28E             22                     CLR             TR1
+004E B296             23                     CPL             P1.6
+0050 758B18           24                     MOV             TL1, #18H
+0053 758DFC           25                     MOV             TH1, #0FCH
+0056 D28E             26                     SETB    TR1             
+0058 32               27                     RETI
+                      28     END
+                                     
+A51 MACRO ASSEMBLER  BT2                                                                  04/17/2020 16:31:05 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+IE . . . . . . . .  D ADDR   00A8H   A   
+MAIN . . . . . . .  C ADDR   0030H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+TF0_ISR. . . . . .  C ADDR   0045H   A   
+TF1_ISR. . . . . .  C ADDR   004CH   A   
+TH0. . . . . . . .  D ADDR   008CH   A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TL1. . . . . . . .  D ADDR   008BH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR0. . . . . . . .  B ADDR   0088H.4 A   
+TR1. . . . . . . .  B ADDR   0088H.6 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

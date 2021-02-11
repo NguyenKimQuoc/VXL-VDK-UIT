@@ -1,0 +1,55 @@
+A51 MACRO ASSEMBLER  BT3                                                                  04/18/2020 00:13:57 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02
+OBJECT MODULE PLACED IN Bt3.OBJ
+ASSEMBLER INVOKED BY: E:\Keil\C51\BIN\A51.EXE Bt3.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1                     ORG     00H
+0000 020030            2     LJMP    MAIN
+0023                   3                     ORG             23H
+0023 020048            4     LJMP    SERIAL
+0030                   5                     ORG             30H
+0030                   6     MAIN:   
+0030 758920            7                     MOV             TMOD, #20H
+0033 758DE6            8                     MOV             TH1, #0E6H
+0036 759840            9                     MOV             SCON, #40H
+0039 D28E             10                     SETB    TR1
+003B D2AF             11                     SETB    EA
+003D D2AC             12                     SETB    ES      
+                      13                     
+003F 7442             14     LOOP:   MOV             A, #"B"
+0041 F599             15                     MOV             SBUF, A
+0043 3099FD           16                     JNB             TI, $
+0046 80F7             17                     SJMP    LOOP
+0048                  18     SERIAL: 
+0048 C299             19                     CLR             TI
+004A 32               20                     RETI
+                      21     END
+A51 MACRO ASSEMBLER  BT3                                                                  04/18/2020 00:13:57 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+EA . . . . . . . .  B ADDR   00A8H.7 A   
+ES . . . . . . . .  B ADDR   00A8H.4 A   
+LOOP . . . . . . .  C ADDR   003FH   A   
+MAIN . . . . . . .  C ADDR   0030H   A   
+SBUF . . . . . . .  D ADDR   0099H   A   
+SCON . . . . . . .  D ADDR   0098H   A   
+SERIAL . . . . . .  C ADDR   0048H   A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TI . . . . . . . .  B ADDR   0098H.1 A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR1. . . . . . . .  B ADDR   0088H.6 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

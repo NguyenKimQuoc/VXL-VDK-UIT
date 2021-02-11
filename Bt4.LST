@@ -1,0 +1,173 @@
+A51 MACRO ASSEMBLER  BT4                                                                  04/19/2020 00:42:34 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02
+OBJECT MODULE PLACED IN Bt4.OBJ
+ASSEMBLER INVOKED BY: E:\Keil\C51\BIN\A51.EXE Bt4.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1                     ORG     00H
+0000 020030            2     LJMP    MAIN
+0013                   3                     ORG             13H
+0013 020053            4     LJMP    INT1_ISR
+000B                   5                     ORG             0BH
+000B 0200ED            6     LJMP    TF0_ISR
+0023                   7                     ORG             23H
+0023 020050            8     LJMP    SERIAL
+0030                   9                     ORG             30H
+                      10     
+0030 758922           11     MAIN:           MOV             TMOD, #22H      ; mode 2 timer0, mode 2 timer1
+0033 758DF3           12                     MOV             TH1, #0F3H      ; baud rate 2400
+0036 759840           13                     MOV             SCON, #40H      ; mode 1 uart
+0039 758C06           14                     MOV             TH0, #06H       ; set TH cua timer0
+003C 75A896           15                     MOV             IE, #96H        ; enable interrupt
+003F 758780           16                     MOV             PCON, #10000000B        ; X2 baud rate => 4800
+0042 D2BC             17                     SETB    PS                      ; set uu tien 1 cho serial interrupt
+0044 D28A             18                     SETB    IT1                     ; ngat canh xuong
+0046 D28E             19                     SETB    TR1
+                      20                     
+0048 7800             21                     MOV             R0,     #0      ; counter to create 500HZ 
+004A 7900             22                     MOV             R1,     #0      ; counter 250
+004C 7A00             23                     MOV             R2,     #0      ; counter to set delay 10 second        
+004E                  24     LOOP:           
+004E 80FE             25                     SJMP    LOOP                    ; infinite loop
+                      26     
+0050                  27     SERIAL:                                         ; ngat serial uart      
+0050 C299             28                     CLR             TI
+0052 32               29                     RETI
+                      30     
+0053                  31     INT1_ISR:                                       ; ngat INT1
+0053 D28C             32                     SETB            TR0             ; enable timer 0
+0055 7431             33                     MOV             A, #"1"         ; send 18521310-NGUYENKIMQUOC
+0057 F599             34                     MOV             SBUF, A 
+0059 3099FD           35                     JNB             TI, $
+005C 7438             36                     MOV             A, #"8"
+005E F599             37                     MOV             SBUF, A
+0060 3099FD           38                     JNB             TI, $
+0063 7435             39                     MOV             A, #"5"
+0065 F599             40                     MOV             SBUF, A
+0067 3099FD           41                     JNB             TI, $
+006A 7432             42                     MOV             A, #"2"
+006C F599             43                     MOV             SBUF, A
+006E 3099FD           44                     JNB             TI, $
+0071 7431             45                     MOV             A, #"1"
+0073 F599             46                     MOV             SBUF, A
+0075 3099FD           47                     JNB             TI, $
+0078 7433             48                     MOV             A, #"3"
+007A F599             49                     MOV             SBUF, A
+007C 3099FD           50                     JNB             TI, $
+007F 7431             51                     MOV             A, #"1"
+0081 F599             52                     MOV             SBUF, A
+0083 3099FD           53                     JNB             TI, $
+0086 7430             54                     MOV             A, #"0"
+0088 F599             55                     MOV             SBUF, A
+008A 3099FD           56                     JNB             TI, $
+008D 742D             57                     MOV             A, #"-"
+008F F599             58                     MOV             SBUF, A
+A51 MACRO ASSEMBLER  BT4                                                                  04/19/2020 00:42:34 PAGE     2
+
+0091 3099FD           59                     JNB             TI, $
+0094 744E             60                     MOV             A, #"N"
+0096 F599             61                     MOV             SBUF, A
+0098 3099FD           62                     JNB             TI, $
+009B 7447             63                     MOV             A, #"G"
+009D F599             64                     MOV             SBUF, A
+009F 3099FD           65                     JNB             TI, $
+00A2 7455             66                     MOV             A, #"U"
+00A4 F599             67                     MOV             SBUF, A
+00A6 3099FD           68                     JNB             TI, $
+00A9 7459             69                     MOV             A, #"Y"
+00AB F599             70                     MOV             SBUF, A
+00AD 3099FD           71                     JNB             TI, $
+00B0 7445             72                     MOV             A, #"E"
+00B2 F599             73                     MOV             SBUF, A
+00B4 3099FD           74                     JNB             TI, $
+00B7 744E             75                     MOV             A, #"N"
+00B9 F599             76                     MOV             SBUF, A
+00BB 3099FD           77                     JNB             TI, $
+00BE 744B             78                     MOV             A, #"K"
+00C0 F599             79                     MOV             SBUF, A
+00C2 3099FD           80                     JNB             TI, $
+00C5 7449             81                     MOV             A, #"I"
+00C7 F599             82                     MOV             SBUF, A
+00C9 3099FD           83                     JNB             TI, $
+00CC 744D             84                     MOV             A, #"M"
+00CE F599             85                     MOV             SBUF, A
+00D0 3099FD           86                     JNB             TI, $
+00D3 7451             87                     MOV             A, #"Q"
+00D5 F599             88                     MOV             SBUF, A
+00D7 3099FD           89                     JNB             TI, $
+00DA 7455             90                     MOV             A, #"U"
+00DC F599             91                     MOV             SBUF, A
+00DE 3099FD           92                     JNB             TI, $
+00E1 744F             93                     MOV             A, #"O"
+00E3 F599             94                     MOV             SBUF, A
+00E5 3099FD           95                     JNB             TI, $
+00E8 7443             96                     MOV             A, #"C"
+00EA F599             97                     MOV             SBUF, A
+00EC 32               98                     RETI
+00ED                  99     TF0_ISR:
+00ED E8              100                     MOV             A, R0
+00EE 2401            101                     ADD             A, #1
+00F0 F8              102                     MOV             R0, A
+00F1 C28C            103                     CLR             TR0
+00F3 B80419          104                     CJNE            R0, #4, NEXT    ; create 500Hz from 2KHz
+                     105     
+00F6 E9              106                     MOV             A, R1           ;
+00F7 2401            107                     ADD             A, #1           ;
+00F9 F9              108                     MOV             R1, A           ;
+00FA B9FA0E          109                     CJNE            R1, #250, NEXT1 ;
+00FD 7900            110                     MOV             R1, #0          ;
+00FF EA              111                     MOV             A, R2           ; Check 10 second
+0100 2401            112                     ADD             A, #1           ;
+0102 FA              113                     MOV             R2, A           ;
+0103 BA2805          114                     CJNE            R2, #40, NEXT1  ;
+0106 7A00            115                     MOV             R2, #0          
+0108 C28C            116                     CLR             TR0
+010A 32              117                     RETI
+010B                 118     NEXT1:
+010B B291            119                     CPL             P1.1            ; tao xung vuong
+010D 7800            120                     MOV             R0, #0
+                     121     
+010F                 122     NEXT:
+010F D28C            123                     SETB    TR0
+0111 32              124                     RETI
+A51 MACRO ASSEMBLER  BT4                                                                  04/19/2020 00:42:34 PAGE     3
+
+                     125     
+                     126     END
+A51 MACRO ASSEMBLER  BT4                                                                  04/19/2020 00:42:34 PAGE     4
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+IE . . . . . . . .  D ADDR   00A8H   A   
+INT1_ISR . . . . .  C ADDR   0053H   A   
+IT1. . . . . . . .  B ADDR   0088H.2 A   
+LOOP . . . . . . .  C ADDR   004EH   A   
+MAIN . . . . . . .  C ADDR   0030H   A   
+NEXT . . . . . . .  C ADDR   010FH   A   
+NEXT1. . . . . . .  C ADDR   010BH   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+PCON . . . . . . .  D ADDR   0087H   A   
+PS . . . . . . . .  B ADDR   00B8H.4 A   
+SBUF . . . . . . .  D ADDR   0099H   A   
+SCON . . . . . . .  D ADDR   0098H   A   
+SERIAL . . . . . .  C ADDR   0050H   A   
+TF0_ISR. . . . . .  C ADDR   00EDH   A   
+TH0. . . . . . . .  D ADDR   008CH   A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TI . . . . . . . .  B ADDR   0098H.1 A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR0. . . . . . . .  B ADDR   0088H.4 A   
+TR1. . . . . . . .  B ADDR   0088H.6 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

@@ -1,0 +1,63 @@
+A51 MACRO ASSEMBLER  BT1                                                                  04/17/2020 15:36:47 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02
+OBJECT MODULE PLACED IN Bt1.OBJ
+ASSEMBLER INVOKED BY: E:\Keil\C51\BIN\A51.EXE Bt1.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 00h
+0000 020030            2     ljmp    MAIN
+000B                   3     org     0Bh
+000B 02004D            4     ljmp tf0_isr
+0030                   5     org 030h
+0030 758902            6     MAIN:   MOV     TMOD, #02H
+0033 758CA4            7                     MOV     TH0, #0A4H
+                       8                     ;MOV            P0,#0FFh
+0036 D28C              9                     SETB    TR0
+0038 75A882           10                     MOV             IE, #082h
+003B A880             11                     MOV             R0, P0  
+003D                  12     LOOP:
+003D E8               13                     MOV             A,      R0
+003E B58002           14                     CJNE    A,      P0,     NEXT
+0041 50FA             15                     JNC             LOOP
+0043                  16     NEXT:
+0043 E8               17                     MOV             A,      R0
+0044 8580F0           18                     MOV             B,      P0
+0047 A4               19                     MUL             AB
+0048 F8               20                     MOV             R0,     A
+0049 8890             21                     MOV             P1, R0
+004B 80F0             22                     SJMP    LOOP
+004D                  23     tf0_isr: 
+004D C28C             24                     CLR             TR0
+004F B2A1             25                     CPL             P2.1
+0051 D28C             26                     SETB    TR0
+0053 32               27                     RETI
+                      28     END
+A51 MACRO ASSEMBLER  BT1                                                                  04/17/2020 15:36:47 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+IE . . . . . . . .  D ADDR   00A8H   A   
+LOOP . . . . . . .  C ADDR   003DH   A   
+MAIN . . . . . . .  C ADDR   0030H   A   
+NEXT . . . . . . .  C ADDR   0043H   A   
+P0 . . . . . . . .  D ADDR   0080H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+TF0_ISR. . . . . .  C ADDR   004DH   A   
+TH0. . . . . . . .  D ADDR   008CH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR0. . . . . . . .  B ADDR   0088H.4 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
